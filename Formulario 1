@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text], [type=password] {
+          width: 40%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+select {
+  width: 50%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+        input[type=submit] {
+          width: 100%;
+          background-color: #00ccff;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #00c3ff;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    
+    <form action="mailto:jsanguineti@murialdo.edu.ar" method="post" enctype="text/plain">
+
+Hola, ¿como te llamas? <input type = "text" name="Nombre">
+<br>
+¿Cual es tu curso? <input type = "text" name="curso">
+
+<p> A continuacion podras ver 5 ejercicios, algunos sobre Python, pueden usar el programa para realizarlos y verificarlos antes de copiarlos, aplica todo lo que has aprendido segun el video que mostre en mi pagina: 
+<a href="tutorial python">click aca</a>.
+</p>
+
+<p> 1) Escribe un codigo en el cual un usuario coloque 2 numeros y muestre automaticamente el resultrado de una suma y una resta.</p>
+<textarea name="comentario" rows="10" cols="40">Escribe tu código....</textarea>
+
+<p> 2) Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. Considerar el caso en que ambos números son iguales.</p>
+<textarea name="comentario" rows="10" cols="40">Escribe tu código....</textarea>
+
+<p> 3) Seleccione la opcion correcta: Carlos nació despues que Paula. Jose es mas viejo que Carlos y que Robreto. Sara nacio despues que Carlos, pero antes que Roberto. Paula es mayor que Jose ¿Quien ocupa el 2° lugar por orden de nacimiento?</p>
+<select name="Opciones">
+    <option value = "opcion 1"> Paula </option>
+    <option value = "opcion 2"> Sara </option>
+    <option value = "opcion 3"> Carlos </option>
+    <option value = "opcion 4"> Jose </option>
+    </select>
+    <br>
+<p> 4) A partir de la siguiente imagen, elija la opcion correcta.</p>
+  <img src="https://i.pinimg.com/736x/8b/6f/66/8b6f667a8ec79bd01b4e34f883b2725c.jpg" style="width: 600px;height: 400px;">
+  <br>
+    <input type="radio" id="10" name="10" value="10" >
+    <label for= "10">10</label>
+   <br>
+   <input type="radio" id="14" name="14" value="14" >
+   <label for= "14">14</label>
+    <br>  
+  <input type="radio" id="20" name="20" value="20">
+    <label for= "20">20</label>
+    <br>
+    <input type="radio" id="8" name="8" value="8">
+    <label for= "8">8</label>
+    <br>
+<p> 5) Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas. </p>
+<textarea name="comentario" rows="10" cols="40">Escribe tu código....</textarea>
+    <br><br>
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
